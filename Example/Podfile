@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GGZBUsinessKit_Example' do
+  pod 'GGZBUsinessKit', :path => '../'
+
+  target 'GGZBUsinessKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
