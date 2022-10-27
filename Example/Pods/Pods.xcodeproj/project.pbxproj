@@ -27,8 +27,8 @@
 		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		790C9727B57D0F50196EDD161F21CB46 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E316019BCA4F41B633866D52BF20F53 /* ReplaceMe.m */; };
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
-		8367818A2907BA6500754A16 /* GGZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 836781882907BA6500754A16 /* GGZTest.h */; };
 		8367818B2907BA6500754A16 /* GGZTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 836781892907BA6500754A16 /* GGZTest.m */; };
+		83E7E9D7290AA06B00BA2E8E /* GGZBUsinessKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E7E9D6290AA06B00BA2E8E /* GGZBUsinessKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874832742765D61BF445024BAF87BF6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -90,7 +90,7 @@
 		4003FAFE43EDC01C574691D8E1765EA1 /* Pods-GGZBUsinessKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGZBUsinessKit_Tests.modulemap"; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		4F388B1727995CAC4C4ECD134A94F715 /* GGZBUsinessKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GGZBUsinessKit; path = GGZBUsinessKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F388B1727995CAC4C4ECD134A94F715 /* GGZBUsinessKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GGZBUsinessKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6197D2620263DA515076DB51A15EED51 /* Pods-GGZBUsinessKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGZBUsinessKit_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 		7F32AD612FEDC98D49ED6BF163731E8F /* GGZBUsinessKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GGZBUsinessKit-Info.plist"; sourceTree = "<group>"; };
 		836781882907BA6500754A16 /* GGZTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGZTest.h; path = GGZBUsinessKit/Classes/GGZTest.h; sourceTree = "<group>"; };
 		836781892907BA6500754A16 /* GGZTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GGZTest.m; path = GGZBUsinessKit/Classes/GGZTest.m; sourceTree = "<group>"; };
+		83E7E9D6290AA06B00BA2E8E /* GGZBUsinessKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGZBUsinessKit.h; path = GGZBUsinessKit/Classes/GGZBUsinessKit.h; sourceTree = "<group>"; };
 		8575266A0EC82255602F7244DB65A6CF /* GGZBUsinessKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGZBUsinessKit-umbrella.h"; sourceTree = "<group>"; };
 		86FFC3A07CC1EACA8FCD571390D6ABD3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
@@ -235,6 +236,7 @@
 				F0232C513104EFF330D590BBB328FD9E /* Support Files */,
 				836781882907BA6500754A16 /* GGZTest.h */,
 				836781892907BA6500754A16 /* GGZTest.m */,
+				83E7E9D6290AA06B00BA2E8E /* GGZBUsinessKit.h */,
 			);
 			name = GGZBUsinessKit;
 			path = ../..;
@@ -330,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
-				4F388B1727995CAC4C4ECD134A94F715 /* GGZBUsinessKit */,
+				4F388B1727995CAC4C4ECD134A94F715 /* GGZBUsinessKit.framework */,
 				0EC9DD7BC05D7EBD9628C0269F68EFDF /* Pods-GGZBUsinessKit_Example */,
 				F10CE172BE2EA9A50E1A5AA306658D66 /* Pods-GGZBUsinessKit_Tests */,
 			);
@@ -386,8 +388,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E7E9D7290AA06B00BA2E8E /* GGZBUsinessKit.h in Headers */,
 				ACE7B1BE9AF4352DB63DF55D7FA3885D /* GGZBUsinessKit-umbrella.h in Headers */,
-				8367818A2907BA6500754A16 /* GGZTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +426,7 @@
 			);
 			name = GGZBUsinessKit;
 			productName = GGZBUsinessKit;
-			productReference = 4F388B1727995CAC4C4ECD134A94F715 /* GGZBUsinessKit */;
+			productReference = 4F388B1727995CAC4C4ECD134A94F715 /* GGZBUsinessKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		911DECC64079F2A37396FCF213B20CA4 /* Pods-GGZBUsinessKit_Tests */ = {
