@@ -10,6 +10,15 @@ build_dir="build"
 out_dir="out"
 final_framework_dir="../GGZBUsinessKit/Frameworks"
 
+# 检测是否需要提交信息
+function detect_code_commit {
+    echo "======detect_code_commit start======"
+
+
+    echo "======detect_code_commit start======"
+}
+
+
 # 清除缓存
 function build_clean {
     echo "======build_clean start======"
@@ -20,7 +29,7 @@ function build_clean {
     echo "======build_clean end======"
 }
 
-# 配置
+# 配置podspec版本号
 function build_config {
     echo "======build_config start======"
 
@@ -78,6 +87,17 @@ function store_final_framework {
     mkdir ${final_framework_dir}
     cp -R ${out_dir}/${framework_name}.framework ${final_framework_dir}
     echo "======build final framework end======"
+}
+
+# pod发布
+function pod_release_publish {
+    echo "======pod source publish start======"
+    pod repo push GGZSpec GGZBUsinessKit.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
+    echo "======pod source publish start======"
+
+    echo "======pod binary publish start======"
+    pod repo push GGZSpec GGZBUsinessKit-binary.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
+    echo "======pod binary publish start======"
 }
 
 # 调用
