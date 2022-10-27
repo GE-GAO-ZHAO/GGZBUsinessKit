@@ -29,6 +29,7 @@
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		8367818B2907BA6500754A16 /* GGZTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 836781892907BA6500754A16 /* GGZTest.m */; };
 		83E7E9D7290AA06B00BA2E8E /* GGZBUsinessKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E7E9D6290AA06B00BA2E8E /* GGZBUsinessKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E7E9D8290AA88600BA2E8E /* GGZTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 836781882907BA6500754A16 /* GGZTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874832742765D61BF445024BAF87BF6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -389,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E7E9D7290AA06B00BA2E8E /* GGZBUsinessKit.h in Headers */,
+				83E7E9D8290AA88600BA2E8E /* GGZTest.h in Headers */,
 				ACE7B1BE9AF4352DB63DF55D7FA3885D /* GGZBUsinessKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
