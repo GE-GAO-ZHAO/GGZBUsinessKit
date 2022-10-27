@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GGZBUsinessKit-binary'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of GGZBUsinessKit.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.static_framework = true
 
 
-  s.source_files = 'GGZBUsinessKit/Classes/**/*'
+  #s.source_files = 'GGZBUsinessKit/Classes/**/*'
   
   s.ios.vendored_frameworks = 'GGZBUsinessKit/Frameworks/GGZBUsinessKit.framework'
   
