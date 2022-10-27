@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'GGZBUsinessKit/Classes/**/*'
   
-  s.ios.vendored_frameworks = './GGZBUsinessKit/Frameworks/GGZBUsinessKit.framework'
+  s.ios.vendored_frameworks = 'GGZBUsinessKit/Frameworks/GGZBUsinessKit.framework'
   
   # s.resource_bundles = {
   #   'GGZBUsinessKit' => ['GGZBUsinessKit/Assets/*.png']
