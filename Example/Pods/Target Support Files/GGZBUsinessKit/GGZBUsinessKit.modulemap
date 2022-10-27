@@ -1,0 +1,6 @@
+framework module GGZBUsinessKit {
+  umbrella header "GGZBUsinessKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

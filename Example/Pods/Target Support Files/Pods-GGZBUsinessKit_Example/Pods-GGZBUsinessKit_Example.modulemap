@@ -1,0 +1,6 @@
+framework module Pods_GGZBUsinessKit_Example {
+  umbrella header "Pods-GGZBUsinessKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

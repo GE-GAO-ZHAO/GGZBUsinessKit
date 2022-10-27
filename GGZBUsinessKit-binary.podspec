@@ -29,19 +29,19 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  
+  s.static_framework = true
+
 
   s.source_files = 'GGZBUsinessKit/Classes/**/*'
+  
+  s.ios.vendored_frameworks = './GGZBUsinessKit/Frameworks/*.framework'
   
   # s.resource_bundles = {
   #   'GGZBUsinessKit' => ['GGZBUsinessKit/Assets/*.png']
   # }
 
-  s.public_header_files = 'GGZBUsinessKit/Classes/**/*.h'
-  
-  s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

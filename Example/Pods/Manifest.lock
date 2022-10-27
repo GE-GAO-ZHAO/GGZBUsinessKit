@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - GGZBUsinessKit (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - GGZBUsinessKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  GGZBUsinessKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GGZBUsinessKit: fc62289d29a30effd02e7a40fdd1f2e4f464fc06
+
+PODFILE CHECKSUM: 75c5043005e80c49352233dc58cc25b5185afaee
+
+COCOAPODS: 1.11.3
