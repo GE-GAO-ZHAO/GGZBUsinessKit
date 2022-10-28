@@ -95,9 +95,7 @@ function increment_version {
     echo "new version is: ${build_version// /.}"
 }
 function replae_podspec_version {
-    echo "旧版本:${old_build_version}"
     echo "最新版本:${build_version// /.}"
-    old="${old_build_version}"
     new="${build_version// /.}"
     python3 ../increase_version_podspec.py "../${pod_source_name}.podspec" "${new}"
     python3 ../increase_version_podspec.py "../${pod_binary_name}.podspec" "${new}"
@@ -108,30 +106,29 @@ function replae_podspec_version {
 # 检测是否需要提交信息 && 有的话就进行提交远程仓库 && 打tag提交到远程
 function detect_code_commit {
     echo "======detect_code_commit start======"
-    git pull
-    git status
-    git add *
+    git add ../GGZBUsinessKit-binary.podspec ../GGZBUsinessKit.podspec
     git commit -m '提交静态库和更新后的代码逻辑'
-    git push
+    git push --set-upstream origin
     echo "======detect_code_commit start======"
 }
 
 # 打tag
 function push_new_tag {
     echo "======add_new_tag start======"
-    git tag ${build_version}
+    git tag "${build_version// /.}"
     git push origin --tags
     echo "======add_new_tag end  ======"
 }
 
 # pod发布
 function pod_release_publish {
+    cd ../
     echo "======pod source publish start======"
-    pod repo push GGZSpec ../${pod_source_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
+    pod repo push GGZSpec ${pod_source_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
     echo "======pod source publish start======"
     
     echo "======pod binary publish start======"
-    pod repo push GGZSpec ../${pod_binary_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
+    pod repo push GGZSpec ${pod_binary_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
     echo "======pod binary publish start======"
 }
 
@@ -143,16 +140,16 @@ function pod_release_publish {
 #store_final_framework
 
 #步骤2: 修改podspec版本号
-podspec_verion_config
+#podspec_verion_config
 
 #步骤3: 提交修改信息和静态库
 detect_code_commit
 
 #步骤4: 打tag并提交tags
-push_new_tag
+#push_new_tag
 
 #步骤5: pod发布源码库和二进制库
-pod_release_publish
+#pod_release_publish
 
 # =========== 调用逻辑 end =========== #
 
