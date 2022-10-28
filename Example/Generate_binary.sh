@@ -68,12 +68,6 @@ function store_final_framework {
     echo "======build final framework end======"
 }
 
-# 获取新版本
-function obtain_new_version {
-    echo "======obtain_new_version start======"
-    echo "======obtain_new_version   end======"
-}
-
 # 配置podspec版本号
 function podspec_verion_config {
     echo "======build_config start======"
