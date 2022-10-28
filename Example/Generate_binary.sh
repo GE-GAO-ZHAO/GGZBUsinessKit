@@ -135,22 +135,22 @@ function pod_release_publish {
 # =========== 调用逻辑 start =========== #
 
 #步骤1: 打静态库
-#build_clean
-#build_framework
-#build_fat_framework
-#store_final_framework
+build_clean
+build_framework
+build_fat_framework
+store_final_framework
 
 #步骤2: 修改podspec版本号
-#podspec_verion_config
+podspec_verion_config
 
 #步骤3: 提交修改信息和静态库
 detect_code_commit
 
 #步骤4: 打tag并提交tags
-#push_new_tag
+push_new_tag
 
 #步骤5: pod发布源码库和二进制库
-#pod_release_publish
+pod_release_publish
 
 # =========== 调用逻辑 end =========== #
 
