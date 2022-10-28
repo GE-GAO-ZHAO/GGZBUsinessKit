@@ -14,4 +14,9 @@
     NSLog(@"hello i`m kit code");
 }
 
+- (void)descriptionSelf
+{
+    NSLog(@"hello i`m kit instence method");
+}
+
 @end
