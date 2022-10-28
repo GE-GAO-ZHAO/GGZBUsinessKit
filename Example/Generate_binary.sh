@@ -127,11 +127,11 @@ function push_new_tag {
 # pod发布
 function pod_release_publish {
     echo "======pod source publish start======"
-    pod repo push GGZSpec GGZBUsinessKit.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
+    pod repo push GGZSpec ../${pod_source_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
     echo "======pod source publish start======"
     
     echo "======pod binary publish start======"
-    pod repo push GGZSpec GGZBUsinessKit-binary.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
+    pod repo push GGZSpec ../${pod_binary_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
     echo "======pod binary publish start======"
 }
 
