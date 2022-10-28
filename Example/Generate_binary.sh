@@ -106,7 +106,7 @@ function replae_podspec_version {
 # 检测是否需要提交信息 && 有的话就进行提交远程仓库 && 打tag提交到远程
 function detect_code_commit {
     echo "======detect_code_commit start======"
-    git add ../GGZBUsinessKit-binary.podspec ../GGZBUsinessKit.podspec
+    git add *
     git commit -m '提交静态库和更新后的代码逻辑'
     git push --set-upstream origin
     echo "======detect_code_commit start======"
@@ -125,31 +125,32 @@ function pod_release_publish {
     cd ../
     echo "======pod source publish start======"
     pod repo push GGZSpec ${pod_source_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
-    echo "======pod source publish start======"
+    echo "======pod source publish end======"
     
     echo "======pod binary publish start======"
     pod repo push GGZSpec ${pod_binary_name}.podspec --use-libraries --allow-warnings --skip-import-validation --skip-tests --verbose
-    echo "======pod binary publish start======"
+    echo "======pod binary publish end======"
 }
 
 # =========== 调用逻辑 start =========== #
+
 #步骤1: 打静态库
-#build_clean
-#build_framework
-#build_fat_framework
-#store_final_framework
+build_clean
+build_framework
+build_fat_framework
+store_final_framework
 
 #步骤2: 修改podspec版本号
-#podspec_verion_config
+podspec_verion_config
 
 #步骤3: 提交修改信息和静态库
 detect_code_commit
 
 #步骤4: 打tag并提交tags
-#push_new_tag
+push_new_tag
 
 #步骤5: pod发布源码库和二进制库
-#pod_release_publish
+pod_release_publish
 
 # =========== 调用逻辑 end =========== #
 
