@@ -31,14 +31,13 @@ function build_framework {
     #若支持bitCode，需加参数：-fembed-bitcode
     xcodebuild -workspace ${workspace}.xcworkspace -scheme ${scheme} -sdk iphoneos -configuration "Release" OTHER_CFLAGS="-fembed-bitcode" BUILD_DIR="../${build_dir}" build || exit 1
     
-    xcodebuild -workspace ${workspace}.xcworkspace -scheme ${scheme} -sdk iphonesimulator -configuration "Release" OTHER_CFLAGS="-fembed-bitcode" BUILD_DIR="../${build_dir}" build || exit 1
+    xcodebuild -workspace ${workspace}.xcworkspace -scheme ${scheme} -sdk iphonesimulator -configuration "Release" ONLY_ACTIVE_ARCH=NO EXCLUDED_ARCHS="arm64" OTHER_CFLAGS="-fembed-bitcode" BUILD_DIR="../${build_dir}" build || exit 1
     
-    #删除模拟器arm64架构
-    cd /Users/gegaozhao/Desktop/person/工程化1/GGZBUsinessKit/Example/build/Release-iphonesimulator/GGZBUsinessKit/GGZBUsinessKit.framework
-    
-    lipo -remove arm64 ${framework_name} -o ${framework_name}
-    cd ../../../../
-    CURRENT_DIR=$(cd $(dirname $0); pwd)
+    #删除模拟器arm64架构(第二种方式)
+    #cd /Users/gegaozhao/Desktop/person/工程化1/GGZBUsinessKit/Example/build/Release-iphonesimulator/GGZBUsinessKit/GGZBUsinessKit.framework
+    #lipo -remove arm64 ${framework_name} -o ${framework_name}
+    #cd ../../../../
+    #CURRENT_DIR=$(cd $(dirname $0); pwd)
     
     echo "======build_framework end======"
 }
