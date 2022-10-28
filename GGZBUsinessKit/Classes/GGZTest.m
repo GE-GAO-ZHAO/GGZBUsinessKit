@@ -14,6 +14,11 @@
     NSLog(@"hello i`m kit code");
 }
 
++ (void)test1
+{
+    NSLog(@"hello i`m test1 method");
+}
+
 - (void)descriptionSelf
 {
     NSLog(@"hello i`m kit instence method");
