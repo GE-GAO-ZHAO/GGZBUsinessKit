@@ -693,6 +693,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				GCC_PREFIX_HEADER = "Target Support Files/GGZBUsinessKit/GGZBUsinessKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GGZBUsinessKit/GGZBUsinessKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -817,6 +818,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/GGZBUsinessKit/GGZBUsinessKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GGZBUsinessKit/GGZBUsinessKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -824,6 +826,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/GGZBUsinessKit/GGZBUsinessKit.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_MODULE_NAME = GGZBUsinessKit;
 				PRODUCT_NAME = GGZBUsinessKit;
 				SDKROOT = iphoneos;
