@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GGZBUsinessKit-binary'
-  s.version          = '0.1.13'
+  s.version          = '0.1.14'
   s.summary          = 'A short description of GGZBUsinessKit.'
 
 # This description is used to generate tags and improve search results.
